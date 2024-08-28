@@ -5,6 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Meal</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link
+      rel="preload"
+      href="fonts/nunito-v26-cyrillic_latin-600.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/nunito-v26-cyrillic_latin-regular.woff2"
+      as="font"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/nunito-v26-cyrillic_latin-800.woff2"
+      as="font"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container header_container">
+        <svg
+          class="header_logo"
+          viewBox="0 0 199 44"
+          role="img"
+          aria-label="Логотип YourMeal"
+        >
+          <use href="img/sprite.svg#logo" />
+        </svg>
+
+        <div class="header_title-container">
+          <h1 class="heder_title">
+            Только самые
+            <span class="header_title-red">сочные бургеры!</span>
+          </h1>
+
+          <p class="header_appeal">Бесплатная доставка от 599₽</p>
+        </div>
+      </div>
+    </header>
+  </body>
 </html>
