@@ -24,6 +24,7 @@ body {
 
 img,
 svg {
+  display: block;
   max-width: 100%;
   max-height: 100%;
   height: auto;
@@ -72,5 +73,27 @@ fieldset {
   margin: 0 auto;
 }
 
+@media (min-width: 480px) {
+  html {
+    --container: 640px;
+  }
+}
+
 @media (min-width: 768px) {
+  html {
+    --padding-container: 64px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    --container: 960px;
+    --padding-container: 32px;
+  }
+}
+
+@media (min-width: 1360px) {
+  html {
+    --container: 1290px;
+  }
 }
