@@ -79,11 +79,11 @@ fieldset {
   }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   html {
     --padding-container: 64px;
   }
-}
+} */
 
 @media (min-width: 1024px) {
   html {

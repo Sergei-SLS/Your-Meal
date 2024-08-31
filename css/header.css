@@ -4,6 +4,7 @@
   background-position: bottom;
   background-repeat: no-repeat;
   padding: 24px 0 30px;
+  margin-bottom: 30px;
 }
 
 .header_logo {
@@ -84,7 +85,7 @@
   font-size: 16px;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .header {
     background-size: 2880px;
     padding-bottom: 63px;
@@ -109,7 +110,8 @@
 
 .header-appeal {
   font-size: 16px;
-}
+  line-height: 22px;
+} */
 
 @media (min-width: 1360px) {
   .header_container {
