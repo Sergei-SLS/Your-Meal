@@ -1,0 +1,20 @@
+.catalog {
+  margin-bottom: 80px;
+}
+
+.catalog_order {
+  margin-bottom: 30px;
+}
+
+.catalog_title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+.catalog_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 145px);
+  gap: 10px;
+}
