@@ -19,3 +19,32 @@
   grid-template-columns: repeat(auto-fit, 145px);
   gap: 10px;
 }
+
+@media (min-width: 1024px) {
+  .catalog {
+    margin-bottom: 100px;
+  }
+
+  .catalog_conteiner {
+    display: flex;
+    gap: 30px;
+  }
+
+  .catalog_order {
+    padding-top: 72px;
+  }
+
+  .catalog_wrapper {
+    flex-grow: 1;
+  }
+
+  .catalog_title {
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .catalog_list {
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px;
+  }
+}

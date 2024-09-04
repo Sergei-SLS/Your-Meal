@@ -142,3 +142,75 @@
   line-height: 14px;
   color: #b1b1b1;
 }
+
+.order_empty {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+
+@media (min-width: 768px) {
+  .order {
+    width: 145px;
+    transition: width 0.06s ease-in-out;
+  }
+
+  .order .order_open {
+    width: 300px;
+  }
+}
+
+@media (min-wdth: 1024px) {
+  .order {
+    width: 300px;
+  }
+
+  .order_wrapper {
+    position: unset;
+    padding: 24px 16px;
+  }
+
+  .order_wrap-title {
+    margin-bottom: 12px;
+  }
+
+  .order_title {
+    font-size: 24px;
+  }
+
+  .order_count {
+    width: 41px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .order_item {
+    padding: 15px;
+  }
+
+  .order_wrap_list {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  .order_close {
+    display: none;
+  }
+
+  .order_total {
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+
+  .order_submit {
+    padding: 1px;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .order_apeal {
+    font-size: 12px;
+  }
+}
