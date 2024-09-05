@@ -91,10 +91,12 @@
   font-size: 12px;
   line-height: 16px;
 }
+
 .order_product-title {
   font-weight: 400;
   margin-bottom: 1px;
 }
+
 .order_product-weight {
   color: #b1b1b1;
   margin-bottom: 6px;

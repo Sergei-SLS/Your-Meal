@@ -1,0 +1,20 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal_open {
+  display: flex;
+}
+
+.modal_main {
+  cursor: default;
+  margin: auto;
+}
+
+.modal_close {
+}
