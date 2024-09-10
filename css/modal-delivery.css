@@ -58,7 +58,7 @@
 }
 
 .modal-delivery_imput_half {
-  flex-basis: calc(100% - var(--gap)) / 2);
+  flex-basis: calc(100% - var(--gap)) / 2;
 }
 
 .modal-delivery_immput::placeholder {
@@ -112,7 +112,7 @@
   opacity: 1;
 }
 
-.modal-delivery_submit{
+.modal-delivery_submit {
   padding: 9px;
   background-color: #ff7020;
   border-radius: 8px;
@@ -120,6 +120,30 @@
   font-size: 12px;
   line-height: 100%;
   color: #ffffff;
+  transition: transform 0.1s ease, background-color 0.3s ease-in-out;
+}
+
+.modal-delivery_submit:hover {
+  background-color: #ffab08;
+}
+
+.modal-delivery_submit:focus-visible {
+  background-color: #f86310;
+}
+
+.modal-delivery_submit:active {
+  transform: translate(1px, 2px);
+}
+
+.modal-delivery_submit:disabled {
+  background: #f9f9f9;
+  color: #acacac;
+}
+
+@supports not selector(:focus-visible) {
+  .modal-delivery_submit:focus {
+    background-color: #f86310;
+  }
 }
 
 @media (min-width: 480px) {
@@ -133,15 +157,15 @@
 
   .modal-delivery_container {
     margin-left: 0;
-
   }
 }
 
-@media(min-width: 1024px){
+@media (min-width: 1024px) {
   .modal-delivery {
     max-width: 684px;
-    padding: 24px 24px 24px 366px;
-    background: url('../img/donut.svg') 19px center, linear-gradient(to right, #FFAB08 50%, #FFF 50%);
+    padding: 44px 24px 24px 366px;
+    background: url("../img/donut.svg") 19px center,
+      linear-gradient(to right, #ffab08 50%, #fff 50%);
     background-size: 302px, auto;
     background-repeat: no-repeat;
   }
@@ -153,7 +177,7 @@
 
   .modal_delivery_form {
     margin-bottom: 32px;
-    gap:16px
+    gap: 16px;
   }
 
   .modal-delivery_imput {
@@ -162,7 +186,15 @@
     height: 40px;
   }
 
-  .modal-delivery_fieldset {
+  .modal-delivery_label {
+    font-size: 12px;
+  }
 
+  .modal-delivery_fieldset_radio {
+    gap: 12px;
+  }
+
+  .modal-delivery_submit {
+    font-size: 16px;
   }
 }

@@ -31,6 +31,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 130%;
+  transition: color 0.3s ease-in-out;
 }
 
 .footer_list {
@@ -39,6 +40,14 @@
 }
 
 .footer_link-sn {
+  color: #ff7020;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer_link-phone:hover,
+.footer_link-phone:focus,
+.footer_link-sn:hover,
+.footer_link-sn:focus {
   color: #ff7020;
 }
 
