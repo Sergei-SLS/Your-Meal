@@ -16,7 +16,7 @@
 
 .catalog_list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 145px);
+  grid-template-columns: repeat(auto-fit, 135px); /*was 145px*/
   gap: 10px;
 }
 

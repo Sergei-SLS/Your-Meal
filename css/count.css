@@ -21,7 +21,7 @@
 }
 
 @media (min-width: 1024px) {
-  .order_product_count {
+  .count {
     width: 84px;
     height: 40px;
     border-radius: 12px;
