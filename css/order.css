@@ -3,7 +3,7 @@
 }
 
 .order_wrapper {
-  position: absolute;
+  position: relative; /*position: absolutre;*/
   left: 0;
   top: 0;
   right: 0;
@@ -157,8 +157,8 @@
     transition: width 0.06s ease-in-out;
   }
 
-  .order .order_open {
-    width: 300px;
+  .order.order_open {
+    width: 280px; /*по макету 300px*/
   }
 }
 
