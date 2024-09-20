@@ -1,44 +1,26 @@
-const modalProduct = document.querySelector(".modal_product");
-const catalogList = document.querySelector(".catalog_list");
-const product = {
+import { modalProduct, catalogList } from "./elements.js";
+
+import { createCardProduct } from "./createCardProduct.js";
+
+const burgerMax = {
   title: "Burger Max",
-  price: 1,
+  price: 100000,
   weight: 5000,
-  calories: 15,
+  calories: 15000,
   description: "The over, super, big burger!",
   image: "img/photo-2.jpg",
   ingredients: ["bread", "meat", "cheese", "tomato", "souce"],
 };
 
-const modalProductTitle = document.querySelector(".modal-product_title");
-const modalProductImage = document.querySelector(".modal-product_image");
-const modalProductDescription = document.querySelector(
-  ".modal-product_description"
-);
-const ingredientsList = document.querySelector(".ingredients_list");
-const ingredientsCalories = document.querySelector(".ingredients_calories");
-const modalProductPriceCount = document.querySelector(
-  ".modal-product_price-count"
-);
-
-modalProductTitle.textContent = product.title;
-modalProductImage.src = product.image;
-ingredientsList.textContent = "";
-
-const ingredientsListItems = product.ingredients.map((item) => {
-  const li = document.createElement("li");
-  li.classList.add("ingredients_item");
-  li.textContent = item;
-  return li;
-});
-
-ingredientsList.append(...ingredientsListItems);
+import { openModal } from "./openModal.js";
+import { renderListProduct } from "./renderListProduct.js";
+import { navigationListControler } from "./navigationListControler.js";
 
 catalogList.addEventListener("click", (event) => {
   const target = event.target;
 
   if (target.closest(".product_detail") || target.closest(".product_image")) {
-    modalProduct.classList.add("modal_open");
+    openModal(burgerMax);
   }
 });
 
@@ -48,3 +30,10 @@ modalProduct.addEventListener("click", (event) => {
     modalProduct.classList.remove("modal_open");
   }
 });
+
+const init = () => {
+  renderListProduct();
+  navigationListControler();
+};
+
+init();
