@@ -5,7 +5,7 @@ import {
   navigationListItems,
 } from "./elements.js";
 
-export const navigationListControler = () => {
+export const navigationListControler = (cb) => {
   navigationList.addEventListener("click", (e) => {
     const categoryItem = e.target.closest(".navigation_button");
 
@@ -15,6 +15,7 @@ export const navigationListControler = () => {
       if (item === categoryItem) {
         item.classList.add("navigation_button_active");
         catalogTitle.textContent = item.textContent;
+        cb(item.dataset.category);
       } else {
         item.classList.remove("navigation_button_active");
       }

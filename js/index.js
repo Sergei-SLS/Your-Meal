@@ -33,7 +33,7 @@ modalProduct.addEventListener("click", (event) => {
 
 const init = () => {
   renderListProduct();
-  navigationListControler();
+  navigationListControler(renderListProduct);
 };
 
 init();
