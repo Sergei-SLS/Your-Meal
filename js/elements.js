@@ -18,3 +18,10 @@ export const navigationList = document.querySelector(".navigation_list");
 export const navigationListItems =
   document.querySelectorAll(".navigation_button");
 export const catalogTitle = document.querySelector(".catalog_title");
+export const modalProductBtn = document.querySelector(".modal-product_btn");
+export const counAmount = document.querySelector(
+  ".modal-product .count_amount"
+);
+export const orderCount = document.querySelector(".order_count");
+export const orderList = document.querySelector(".order_list");
+export const orderTotalAmount = document.querySelector(".order_total_amount");

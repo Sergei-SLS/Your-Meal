@@ -61,6 +61,17 @@
   line-height: 100%;
   color: #ffffff;
 }
+.modal-product_btn:hover {
+  background-color: #ffab08;
+  color: #f9f9f9;
+}
+.modal-product_btn:focus-visible {
+  background-color: #f86310;
+}
+
+.modal-product_btn:active {
+  transform: translate(1px, 2px);
+}
 .modal-product_price {
   text-align: right;
   font-weight: 600;
