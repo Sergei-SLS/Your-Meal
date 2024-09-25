@@ -10,6 +10,7 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
   border-radius: 12px;
   padding: 16px 10px;
+  z-index: 10;
 }
 
 .order_wrap-title {
@@ -17,6 +18,11 @@
   justify-content: space-between;
   align-items: center;
   outline: none;
+  cursor: pointer;
+}
+
+.order_wrap-title:hover .order_title {
+  color: #ffab08;
 }
 
 .order_wrap-title:after {
@@ -175,6 +181,7 @@
   .order_wrap-title {
     margin-bottom: 12px;
     pointer-events: none;
+    cursor: default;
   }
 
   .order_wrap-title:after {
@@ -183,6 +190,10 @@
 
   .order_title {
     font-size: 24px;
+  }
+
+  .order_wrap-title:hover .order_title {
+    color: inherit;
   }
 
   .order_count {
