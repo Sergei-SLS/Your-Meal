@@ -5,9 +5,14 @@ import {
   orderCount,
   orderList,
   orderTotalAmount,
+  orderWrapTitle,
+  order,
+  orderSubmit,
+  modalDelivery,
 } from "./elements.js";
 import { getData } from "./getData.js";
 import { API_URL, PREFIX_PRODUCT } from "./const.js";
+import { orderController } from "./orderController.js";
 
 const getCart = () => {
   const cartList = localStorage.getItem("cart");
@@ -20,6 +25,8 @@ const getCart = () => {
 
 const renderCartList = async () => {
   const cartList = getCart();
+
+  orderSubmit.disabled = !cartList.length;
   const allIdProduct = cartList.map((item) => item.id);
   const data = cartList.length
     ? await getData(`${API_URL}${PREFIX_PRODUCT}?list=${allIdProduct}`)
@@ -127,9 +134,24 @@ const cartController = () => {
       removeCart(targetMinus.dataset.idProduct);
     }
   });
+
+  orderWrapTitle.addEventListener("click", () => {
+    order.classList.toggle("order_open");
+  });
+
+  orderSubmit.addEventListener("click", () => {
+    modalDelivery.classList.add("modal_open");
+  });
+
+  modalDelivery.addEventListener("click", ({ target }) => {
+    if (target.closest(".modal_close") || modalDelivery === target) {
+      modalDelivery.classList.remove("modal_open");
+    }
+  });
 };
 
 export const cartInit = () => {
   cartController();
   renderCartList();
+  orderController(getCart);
 };

@@ -365,12 +365,14 @@
                 class="modal-delivery_imput"
                 type="text"
                 name="name"
+                required
                 placeholder="Ваше имя"
               />
               <input
                 class="modal-delivery_imput"
                 type="tel"
                 name="phone"
+                required
                 placeholder="Телефон"
               />
             </fieldset>
@@ -384,6 +386,7 @@
                   type="radio"
                   value="pickup"
                   name="format"
+                  checked
                 />
                 <span>Самовывоз</span>
               </label>
@@ -394,13 +397,15 @@
                   type="radio"
                   value="delivery"
                   name="format"
-                  checked
                 />
                 <span>Доставка</span>
               </label>
             </fieldset>
 
-            <fieldset class="modal-delivery_fieldset">
+            <fieldset
+              class="modal-delivery_fieldset modal-delivery_fieldset_hide"
+              name="address-info"
+            >
               <input
                 class="modal-delivery_imput"
                 type="text"

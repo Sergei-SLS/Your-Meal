@@ -39,7 +39,7 @@
 }
 
 .order_open .order_wrap-title {
-  margin-bottom: 8px; /* !todo optimaze */
+  margin-bottom: 8px;
 }
 
 .order_title {
@@ -130,6 +130,20 @@
   margin-bottom: 8px;
 }
 
+.order_submit:hover {
+  background-color: #ffab08;
+}
+
+.order_submit:focus {
+  background-color: #f86310;
+}
+
+.order_submit:disabled {
+  background-color: #f9f9f9;
+  color: #acacac;
+  cursor: no-drop;
+}
+
 .order_wrap-apeal {
   display: flex;
   align-items: center;
@@ -188,12 +202,12 @@
     content: none;
   }
 
-  .order_title {
-    font-size: 24px;
-  }
-
   .order_wrap-title:hover .order_title {
     color: inherit;
+  }
+
+  .order_title {
+    font-size: 24px;
   }
 
   .order_count {
