@@ -135,12 +135,20 @@ const cartController = () => {
     }
   });
 
+  const closeOrder = (event) => {
+    if (event.key === "Escape") {
+      modalDelivery.classList.remove("modal_open");
+      document.removeEventListener("keydown", closeOrder);
+    }
+  };
+
   orderWrapTitle.addEventListener("click", () => {
     order.classList.toggle("order_open");
   });
 
   orderSubmit.addEventListener("click", () => {
     modalDelivery.classList.add("modal_open");
+    document.addEventListener("keydown", closeOrder);
   });
 
   modalDelivery.addEventListener("click", ({ target }) => {
