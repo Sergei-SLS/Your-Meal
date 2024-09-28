@@ -30,3 +30,6 @@ export const orderWrapTitle = document.querySelector(".order_wrap-title");
 export const orderSubmit = document.querySelector(".order_submit");
 export const modalDelivery = document.querySelector(".modal_delivery");
 export const modalDeliveryForm = document.querySelector(".modal-delivery_form");
+export const modalDeliveryContainer = document.querySelector(
+  ".modal-delivery_container"
+);

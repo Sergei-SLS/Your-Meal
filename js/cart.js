@@ -108,6 +108,11 @@ const removeCart = (id) => {
   updateCartList(cartList);
 };
 
+export const clearCart = () => {
+  localStorage.removeItem("cart");
+  renderCartList();
+};
+
 const cartController = () => {
   catalogList.addEventListener("click", ({ target }) => {
     if (target.closest(".product_add")) {
