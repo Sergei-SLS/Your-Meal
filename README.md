@@ -3,7 +3,7 @@
 ## Description
 
 A **responsive meal delivery website** built using **HTML**, **CSS**, and **JavaScript**.  
-The site allows users to browse and order various meals, including burgers, snacks, hot dogs, shawarma, pizza, wok noodles, desserts and delivered directly to the customer's door..  
+The site allows users to browse and order various meals, including burgers, snacks, hot dogs, shawarma, pizza, wok noodles, desserts and delivered directly to the customer's door. 
 Orders are placed through an integrated **API**.
 
 The design is fully responsive and optimized for all devices.
